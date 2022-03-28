@@ -1,0 +1,17 @@
+t=int(input())
+for i in range(t):
+
+
+    n=input()
+    a,b=0,0
+    for j in range(len(n)):
+        if int(n[j])%2==0:
+            b+=1
+        else:
+            a+=1
+    if int(n[-1])%2==0 and b>=2:
+        print("YES")
+    elif int(n[-1])%2!=0 and a>=2:
+        print("YES")
+    else:
+        print("NO")
