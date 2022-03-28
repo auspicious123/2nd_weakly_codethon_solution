@@ -1,0 +1,7 @@
+for i in range(int(input())):
+    a = int(input())
+    b = map(int, input().split())
+    b = list(b)
+    
+    b.reverse ()
+    print(*b, sep=" ")
